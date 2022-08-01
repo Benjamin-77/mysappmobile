@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      theme: ThemeData(fontFamily: 'poppins'),
     );
   }
 }
@@ -65,11 +66,169 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       drawer: Drawer(
         child: Container(
-          child: Column(
-            children: [
-
-            ],
+          width: MediaQuery.of(context).size.width*0.5,
+          height: MediaQuery.of(context).size.height*0.8,
+          decoration: BoxDecoration(
           ),
+          child: ListView(
+            children: [
+              ListTile(
+                horizontalTitleGap: 0,
+                leading: SvgPicture.asset('assets/icons/home.svg',height: 20,),
+                title: Text('Accueil',style: TextStyle(fontSize: 17,fontWeight: FontWeight.bold, color: gris),),
+                onTap: () {
+                  // Update the state of the app
+                  // ...
+                  // Then close the drawer
+                  Navigator.pop(context);
+                },
+                tileColor: grisClaire,
+              ),
+              SizedBox(height: 2,),
+              ListTile(
+                horizontalTitleGap: 0,
+                leading: SvgPicture.asset('assets/icons/notification.svg',height: 20,),
+                title: Text('Notifications',style: TextStyle(fontSize: 17,fontWeight: FontWeight.bold, color: gris),),
+                onTap: () {
+                  // Update the state of the app
+                  // ...
+                  // Then close the drawer
+                  Navigator.pop(context);
+                },
+                tileColor: grisClaire,
+              ),
+              SizedBox(height: 2,),
+              ListTile(
+                horizontalTitleGap: 0,
+                leading: SvgPicture.asset('assets/icons/gift.svg',height: 20,),
+                title: Text('Bonus',style: TextStyle(fontSize: 17,fontWeight: FontWeight.bold, color: gris),),
+                onTap: () {
+                  // Update the state of the app
+                  // ...
+                  // Then close the drawer
+                  Navigator.pop(context);
+                },
+                tileColor: grisClaire,
+              ),
+              SizedBox(height: 2,),
+              ListTile(
+                horizontalTitleGap: 0,
+                leading: SvgPicture.asset('assets/icons/annonceIcon.svg',height: 20,),
+                title: Text('Annonces',style: TextStyle(fontSize: 17,fontWeight: FontWeight.bold, color: gris),),
+                onTap: () {
+                  // Update the state of the app
+                  // ...
+                  // Then close the drawer
+                  Navigator.pop(context);
+                },
+                tileColor: grisClaire,
+              ),
+              SizedBox(height: 2,),
+              ListTile(
+                horizontalTitleGap: 0,
+                leading: SvgPicture.asset('assets/icons/publicite.svg',height: 20,),
+                title: Text('Publicités',style: TextStyle(fontSize: 17,fontWeight: FontWeight.bold, color: gris),),
+                onTap: () {
+                  // Update the state of the app
+                  // ...
+                  // Then close the drawer
+                  Navigator.pop(context);
+                },
+                tileColor: grisClaire,
+              ),
+              SizedBox(height: 2,),
+              ListTile(
+                horizontalTitleGap: 0,
+                leading: SvgPicture.asset('assets/icons/walletIcon.svg',height: 20,),
+                title: Text('Mon Portefeille',style: TextStyle(fontSize: 17,fontWeight: FontWeight.bold, color: gris),),
+                onTap: () {
+                  // Update the state of the app
+                  // ...
+                  // Then close the drawer
+                  Navigator.pop(context);
+                },
+                tileColor: grisClaire,
+              ),
+              SizedBox(height: 2,),
+              ListTile(
+                horizontalTitleGap: 0,
+                leading: SvgPicture.asset('assets/icons/historique.svg',height: 20,),
+                title: Text('Historique',style: TextStyle(fontSize: 17,fontWeight: FontWeight.bold, color: gris),),
+                onTap: () {
+                  // Update the state of the app
+                  // ...
+                  // Then close the drawer
+                  Navigator.pop(context);
+                },
+                tileColor: grisClaire,
+              ),
+              SizedBox(height: 2,),
+              ListTile(
+                horizontalTitleGap: 0,
+                leading: SvgPicture.asset('assets/icons/user.svg',height: 20,),
+                title: Text('Mon Compte',style: TextStyle(fontSize: 17,fontWeight: FontWeight.bold, color: gris),),
+                onTap: () {
+                  // Update the state of the app
+                  // ...
+                  // Then close the drawer
+                  Navigator.pop(context);
+                },
+                tileColor: grisClaire,
+              ),
+              SizedBox(height: 2,),
+              ListTile(
+                horizontalTitleGap: 0,
+                leading: SvgPicture.asset('assets/icons/parametre.svg',height: 20,),
+                title: Text('Paramètre',style: TextStyle(fontSize: 17,fontWeight: FontWeight.bold, color: gris),),
+                onTap: () {
+                  // Update the state of the app
+                  // ...
+                  // Then close the drawer
+                  Navigator.pop(context);
+                },
+                tileColor: grisClaire,
+              ),
+              SizedBox(height: 2,),
+              ListTile(
+                horizontalTitleGap: 0,
+                leading: SvgPicture.asset('assets/icons/tel.svg',height: 20,),
+                title: Text('Contacts',style: TextStyle(fontSize: 17,fontWeight: FontWeight.bold, color: gris),),
+                onTap: () {
+                  // Update the state of the app
+                  // ...
+                  // Then close the drawer
+                  Navigator.pop(context);
+                },
+                tileColor: grisClaire,
+              ),
+              SizedBox(height: 2,),
+              ListTile(
+                horizontalTitleGap: 0,
+                leading: SvgPicture.asset('assets/icons/faqIcon.svg',height: 20,),
+                title: Text('Faq',style: TextStyle(fontSize: 17,fontWeight: FontWeight.bold, color: gris),),
+                onTap: () {
+                  // Update the state of the app
+                  // ...
+                  // Then close the drawer
+                  Navigator.pop(context);
+                },
+                tileColor: grisClaire,
+              ),
+              SizedBox(height: 2,),
+              ListTile(
+                horizontalTitleGap: 0,
+                leading: SvgPicture.asset('assets/icons/aide.svg',height: 20,),
+                title: Text('Aide',style: TextStyle(fontSize: 17,fontWeight: FontWeight.bold, color: gris),),
+                onTap: () {
+                  // Update the state of the app
+                  // ...
+                  // Then close the drawer
+                  Navigator.pop(context);
+                },
+                tileColor: grisClaire,
+              ),
+            ],
+          )
         ),
       ),
       body: Center(
